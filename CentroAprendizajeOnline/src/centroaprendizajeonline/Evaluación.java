@@ -4,11 +4,13 @@
  */
 package centroaprendizajeonline;
 
+import java.time.LocalDateTime;
+
 /**
  *
  * @author CltControl
  */
-public class Evaluación {
+public class Evaluación extends ActividadSumativa {
     private int límiteDeTiempo;
 
     public int getLímiteDeTiempo() {
@@ -19,7 +21,8 @@ public class Evaluación {
         this.límiteDeTiempo = límiteDeTiempo;
     }
 
-    public Evaluación(int límiteDeTiempo) {
+    public Evaluación(int límiteDeTiempo,String título, LocalDateTime fechaDeEntrega, float puntajeMáximo, String contenido, float calificacion, String id) {
+        super( título,  fechaDeEntrega,  puntajeMáximo,  contenido,  calificacion,  id);
         this.límiteDeTiempo = límiteDeTiempo;
     }
     

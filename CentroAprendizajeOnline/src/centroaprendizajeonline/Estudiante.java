@@ -9,8 +9,8 @@ package centroaprendizajeonline;
  * @author CltControl
  */
 public class Estudiante extends PersonalAcadémico{
-  
-    public Estudiante(String usuario, String clave, String nombre, String apellido){
+    private Curso curso;   
+    public Estudiante(String usuario, String clave, String nombre, String apellido, Curso curso){
         super( usuario, clave,nombre, apellido);
     }
     

@@ -9,8 +9,10 @@ package centroaprendizajeonline;
  * @author CltControl
  */
 public class Profesor extends PersonalAcadémico{
-    public Profesor(String usuario, String clave, String nombre, String apellido){
+    private Curso curso;
+    public Profesor(String usuario, String clave, String nombre, String apellido, Curso curso){
         super( usuario, clave,nombre, apellido);
+        
     }
     
     public void cargarActividadSumativa(Curso curso, ActividadSumativa actividadSumativa){

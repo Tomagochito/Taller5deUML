@@ -10,7 +10,7 @@ import java.time.LocalDateTime;
  *
  * @author CltControl
  */
-public class Tarea {
+public class Tarea extends ActividadSumativa {
   private LocalDateTime fechaDePublicacion;
 
     public LocalDateTime getFechaDePublicacion() {
@@ -21,7 +21,8 @@ public class Tarea {
         this.fechaDePublicacion = fechaDePublicacion;
     }
 
-    public Tarea(LocalDateTime fechaDePublicacion) {
+    public Tarea(LocalDateTime fechaDePublicacion, String título, LocalDateTime fechaDeEntrega, float puntajeMáximo, String contenido, float calificacion, String id) {
+        super( título,  fechaDeEntrega,  puntajeMáximo,  contenido,  calificacion,  id);
         this.fechaDePublicacion = fechaDePublicacion;
     }
   
