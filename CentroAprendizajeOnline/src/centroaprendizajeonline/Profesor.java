@@ -8,6 +8,24 @@ package centroaprendizajeonline;
  *
  * @author CltControl
  */
-public class Profesor {
+public class Profesor extends PersonalAcadémico{
+    public Profesor(String usuario, String clave, String nombre, String apellido){
+        super( usuario, clave,nombre, apellido);
+    }
     
+    public void cargarActividadSumativa(Curso curso, ActividadSumativa actividadSumativa){
+    //logic
+    }
+    
+    public void calificarActividadSumativa(Curso curso,Estudiante estudiante, ActividadSumativa actividadSumativa){
+    //logic
+    }
+    
+    public void aceptaarInscripcion(Curso curso, String usuarioEstudiante){
+    //logic
+    }
+    
+    public void crearNuevoForo(Foro foro){
+    //logic
+    }
 }
